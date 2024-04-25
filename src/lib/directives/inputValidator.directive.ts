@@ -41,7 +41,7 @@ export class InputValidatorDirective {
       case 'number':
         return !isNaN(Number(value));
       case 'tel':
-        return value.length === 10;
+        return value.length === 9;
       case 'url':
         return value.includes('https://');
       case 'search':
